@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server Settings</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Server Settings</h1>
+    <!-- <input class="theme-checkbox" id="theme" type="checkbox" /> -->
+    <div class="current-key" id="currentDiv">
+      <label for="currentSecret">Current Key</label>
+      <input id="currentSecret" type="password" class="key-bar" disabled>
+      <button id="showKey">Show</button>
+    </div>
+    <form>
+      <div class="form">
+        <input autocomplete="off" id="serverURL" type="url" class="key-bar" placeholder="Enter server URL" required>
+      </div>
+      <div class="form">
+        <input autocomplete="off" id="newSecret" type="text" class="key-bar" placeholder="Enter new key">
+      </div>
+      <div>
+        <button type="submit" id="saveKey">Save</button>
+      </div>
+    </form>
+  </div>
+  <script src="menu.js"></script>
+</body>
+
+</html>
