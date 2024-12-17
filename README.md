@@ -1,8 +1,6 @@
-
-
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="images/keygram-logo.png" alt="Logo" width="200"></a>
+  <img src="images/keygram-logo.png" alt="Logo" width="200">
   <br>
   Keygram
   <br>
