@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "Invia"
+  },
+  "current_key": {
+    "message": "Chiave attuale"
+  },
+  "show": {
+    "message": "Rivela"
+  },
+  "enter_server_url": {
+    "message": "Inserisci l'URL del server"
+  },
+  "enter_new_key": {
+    "message": "Inserisci la nuova chiave"
+  },
+  "save": {
+    "message": "Salva"
+  }
+}

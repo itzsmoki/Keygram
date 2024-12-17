@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "送信"
+  },
+  "current_key": {
+    "message": "現在のキー"
+  },
+  "show": {
+    "message": "表示"
+  },
+  "enter_server_url": {
+    "message": "サーバー URL を入力"
+  },
+  "enter_new_key": {
+    "message": "新しいキーを入力"
+  },
+  "save": {
+    "message": "保存"
+  }
+}

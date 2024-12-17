@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "ОТПРАВИТЬ"
+  },
+  "current_key": {
+    "message": "Текущий ключ"
+  },
+  "show": {
+    "message": "Показать"
+  },
+  "enter_server_url": {
+    "message": "Введите URL сервера"
+  },
+  "enter_new_key": {
+    "message": "Введите новый ключ"
+  },
+  "save": {
+    "message": "Сохранить"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "보내기"
+  },
+  "current_key": {
+    "message": "현재 키"
+  },
+  "show": {
+    "message": "보기"
+  },
+  "enter_server_url": {
+    "message": "서버 URL 입력"
+  },
+  "enter_new_key": {
+    "message": "새 키 입력"
+  },
+  "save": {
+    "message": "저장"
+  }
+}

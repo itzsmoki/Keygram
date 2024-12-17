@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "发送"
+  },
+  "current_key": {
+    "message": "当前密钥"
+  },
+  "show": {
+    "message": "显示"
+  },
+  "enter_server_url": {
+    "message": "输入服务器 URL"
+  },
+  "enter_new_key": {
+    "message": "输入新密钥"
+  },
+  "save": {
+    "message": "保存"
+  }
+}

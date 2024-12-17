@@ -1,0 +1,20 @@
+{
+  "send": {
+    "message": "ENVOYER"
+  },
+  "current_key": {
+    "message": "Clé actuelle"
+  },
+  "show": {
+    "message": "Afficher"
+  },
+  "enter_server_url": {
+    "message": "Entrez l'URL du serveur"
+  },
+  "enter_new_key": {
+    "message": "Entrez la nouvelle clé"
+  },
+  "save": {
+    "message": "Sauvegarder"
+  }
+}
