@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-<h4 align="center">A browser extension to auto-send your Instagram streamkey to a server.</h4>
+<h3 align="center">A browser extension to auto-send your Instagram streamkey to a server.</h3>
 
 <p align="center">
 <a href="https://github.com/itzsmoki/Keygram/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/itzsmoki/keygram"></a>
