@@ -1,3 +1,23 @@
+function setTranslation(id, message) {
+  const element = document.getElementById(id);
+  if (element) {
+    if (element.tagName.toLowerCase() === 'input') {
+      element.placeholder = chrome.i18n.getMessage(message);
+    } else {
+      element.textContent = chrome.i18n.getMessage(message);
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setTranslation('ck-lang', 'current_key');
+  setTranslation('showKey', 'show');
+  setTranslation('serverURL', 'enter_server_url');
+  setTranslation('newSecret', 'enter_new_key');
+  setTranslation('saveKey', 'save');
+});
+
+
 document.getElementById('saveKey').addEventListener('click', function () {
   const newSecret = document.getElementById('newSecret')
   const serverURL = document.getElementById('serverURL')

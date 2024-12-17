@@ -2,11 +2,17 @@
     "manifest_version": 3,
     "name": "Keygram",
     "version": "1.0.0",
+    "default_locale": "en",
     "permissions": ["activeTab", "scripting", "storage"],
     "host_permissions": ["https://www.instagram.com/*"],
     "action": {
         "default_popup": "menu.html"
       },
+    "icons": {
+    "16": "icons/keygram.png",
+    "48": "icons/keygram48x.png",
+    "128": "icons/keygram128x.png"
+    },
     "content_scripts": [
         {
             "matches": ["https://www.instagram.com/*"],

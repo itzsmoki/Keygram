@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'instagram';
+    src:url('font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-    max-height: 340px;
+    max-height: 500px;
     width: 300px;
     background-color: #262626;
 }
@@ -26,11 +34,17 @@ body {
     text-align: center;
 }
 
+#logo {
+    width: 110px;
+}
+
 h1 {
     margin-top: -10px;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #f5f5f5;
+    color: white;
+    font-family: 'instagram', sans-serif;
+    font-weight: 100;
 }
 
 .current-key {
@@ -72,7 +86,7 @@ input.key-bar[type="password"] {
 
 #showKey {
     background-color: transparent;
-    color: #0095f6;
+    color: #d44d65;
     border: none;
     font-size: 0.9rem;
     cursor: pointer;
@@ -80,8 +94,8 @@ input.key-bar[type="password"] {
 }
 
 #showKey:hover {
-    color: #007bb5;
-    text-decoration: underline;
+    color: #a83a4e;
+    text-decoration: none;
 }
 
 #showKey:active {
@@ -103,10 +117,31 @@ input.key-bar[type="password"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: transform 0.1s ease;
+    transform: scale(1);
 }
 
 #saveKey:hover {
     background-color: #007bb5;
+    transform: scale(1.04);
 }
 
-  
+#saveKey:active {
+    transform: scale(1);
+}
+
+.main-color-button {
+    background-image: linear-gradient(to right, 
+    #f15a29 10%,
+    #f3633e 30%,
+    #e1495b 50%,
+    #c73088 70%,
+    #9a4db0 90%);
+}
+
+.main-color-text-gradient {
+    background-image: linear-gradient(to right, #f15a29, #e1495b, #c73088);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

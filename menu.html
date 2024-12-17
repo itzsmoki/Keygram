@@ -10,10 +10,11 @@
 
 <body>
   <div class="container">
-    <h1>Server Settings</h1>
+    <img src="icons/keygram.png"  id="logo">
+    <h1>Keygram</h1>
     <!-- <input class="theme-checkbox" id="theme" type="checkbox" /> -->
     <div class="current-key" id="currentDiv">
-      <label for="currentSecret">Current Key</label>
+      <label id="ck-lang" for="currentSecret">Current Key</label>
       <input id="currentSecret" type="password" class="key-bar" disabled>
       <button id="showKey">Show</button>
     </div>
@@ -25,7 +26,7 @@
         <input autocomplete="off" id="newSecret" type="text" class="key-bar" placeholder="Enter new key">
       </div>
       <div>
-        <button type="submit" id="saveKey">Save</button>
+        <button type="submit" id="saveKey" class="main-color-button">Save</button>
       </div>
     </form>
   </div>

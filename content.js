@@ -1,5 +1,6 @@
 let SECRET
 let SERVER
+const send = chrome.i18n.getMessage("send");
 
 chrome.storage.local.get('SECRET', function (result) {
   SECRET = result.SECRET || ''
@@ -19,7 +20,7 @@ const onStreamKeyBoxLoaded = () => {
     )
     if (!sendButton) {
       sendButton = document.createElement('button')
-      sendButton.textContent = 'Send'
+      sendButton.textContent = send
       sendButton.classList.add('send-stream-key')
       sendButton.style.marginLeft = '2px'
       sendButton.style.backgroundColor = 'transparent'
@@ -58,7 +59,6 @@ const onStreamKeyBoxLoaded = () => {
         const streamKey = streamKeyBox.value
 
         if (!streamKey) {
-          console.error('Stream Key vuota!')
           sendButton.disabled = false
           sendButton.style.color = '#0095f6'
           return
@@ -76,10 +76,8 @@ const onStreamKeyBoxLoaded = () => {
             return response.text()
           })
           .then(data => {
-            console.log('Risposta del server:', data)
           })
           .catch(error => {
-            console.error('Errore:', error)
             sendButton.disabled = false
             sendButton.style.color = '#0095f6'
           })
