@@ -37,7 +37,7 @@ This Chrome extension enhances the Instagram streaming setup by adding a button 
 ## How to Install
 
 
--   Download the extension from the [Releases](https://github.com/itzsmoki/Keygram/releases) section of the repository.
+-   Download the extension from the <a href="https://github.com/itzsmoki/Keygram/releases" target="_blank">Releases</a> section of the repository.
 -   Go to chrome://extensions in your Chrome browser.
 -   Enable **Developer mode** in the top right.
 -   Click **Load unpacked**.
