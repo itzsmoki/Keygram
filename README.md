@@ -15,11 +15,13 @@
 <a href="https://ko-fi.com/itzsmoki"><img alt="Static Badge" src="https://img.shields.io/badge/Donate-KoFi-e3d6c6"></a>
 </p>
 
+<!--
 <div align="center">
   <a href="#what-it-does">What it Does</a> •
   <a href="#how-to-install">How to Install</a> •
   <a href="#support-this-project">Donations</a> 
 </div>
+-->
 
 <p align="center">
   <img width="1000px" src="images/demo2.gif" alt="screenshot">
