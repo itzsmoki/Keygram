@@ -11,8 +11,8 @@
 <h3 align="center">A browser extension to auto-send your Instagram streamkey to a server.</h3>
 
 <p align="center">
-<a href="https://github.com/itzsmoki/Keygram/releases"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/itzsmoki/keygram"></a>
-<a href="https://ko-fi.com/itzsmoki"><img alt="Static Badge" src="https://img.shields.io/badge/Donate-KoFi-e3d6c6"></a>
+<a href="https://github.com/itzsmoki/Keygram/releases"><img width="120px" alt="GitHub Release" src="https://img.shields.io/github/v/release/itzsmoki/keygram"></a>
+<a href="https://ko-fi.com/itzsmoki"><img width="110px" alt="Static Badge" src="https://img.shields.io/badge/Donate-KoFi-e3d6c6"></a>
 </p>
 
 <!--
