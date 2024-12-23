@@ -1,9 +1,11 @@
 # Multistreaming Server Setup (Linux)
 
 ## Prerequisites
-- A registered domain
+- Registered domain
 - SSL/TLS certificate (e.g., <a href="#ssl-certificate-generation-with-lets-encrypt">Let's Encrypt Guide</a>)
 - Chrome extension: <a href="https://github.com/itzsmoki/Keygram">Keygram</a>
+- Flask application with Gunicorn and Nginx (<a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04">Guide</a>)
+
 
 ---
 
@@ -29,7 +31,7 @@ rtmp {
             live on;
             record off;
             on_publish http://127.0.0.1:8334/auth;
-            push rtmp://[streaming-platform-domain]/[key]; # RTMP template
+            push rtmp://<streaming-platform-domain>/<key>; # RTMP template
             push rtmp://127.0.0.1:19350/rtmp/; # RTMPS template for stunnel
         }
 
@@ -49,7 +51,7 @@ http {
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
-            proxy_pass https://[your-server-domain]/auth;
+            proxy_pass https://<your-server-domain>/auth;
         }
     }
 }
@@ -70,7 +72,7 @@ Add the following:
 ```ini
 pid = /var/run/stunnel/stunnel.pid
 output = /var/log/stunnel/stunnel.log
-[insta-live]
+[instagram-live]
 client = yes
 accept = 127.0.0.1:19350
 connect = edgetee-upload-mxp2-1.xx.fbcdn.net:443 # Example for Instagram
@@ -109,7 +111,7 @@ from flask import Flask, request, Response
 import subprocess
 from flask_cors import CORS
 
-SECRET = "[your-key]"
+SECRET = "<your-key>"
 
 app = Flask(__name__)
 
@@ -153,13 +155,7 @@ def update_stream_key():
 
 
 if __name__ == "__main__":
-    app.run(
-        host="0.0.0.0",
-        port=443,
-        ssl_context=(
-            "/etc/letsencrypt/live/[your-server-domain]/fullchain.pem",
-            "/etc/letsencrypt/live/[your-server-domain]/privkey.pem"
-        ))
+    app.run(host='0.0.0.0')
 ```
 ## SSL Certificate Generation with Let's Encrypt
 ### 1. Install Let's Encrypt
@@ -168,7 +164,7 @@ sudo apt install certbot python3-certbot
 ```
 ### 2. Generate the Certificate
 ```bash
-sudo certbot certonly --standalone -d {your-server-domain}
+sudo certbot certonly --standalone -d <your-server-domain>
 ```
 ### 3. Open Crontab
 ```bash
@@ -182,5 +178,5 @@ Save the file with `CTRL + S` and exit with `CTRL + X`.
 ## Link the RTMP Server to OBS
 1. In OBS, go to `Settings > Stream`.
 2. Set `Service` to "Custom".
-3. Set `Server` to `rtmp://[your-server-domain/ip]/live`.
+3. Set `Server` to `rtmp://<your-server-domain/ip>/live`.
 4. Use your selected `SECRET` as the `Stream Key`.
