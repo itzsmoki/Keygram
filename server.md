@@ -70,8 +70,8 @@ sudo nano /etc/stunnel/stunnel.conf
 ```
 Add the following:
 ```ini
-pid = /var/run/stunnel/stunnel.pid
-output = /var/log/stunnel/stunnel.log
+pid = /var/lib/stunnel/stunnel.pid
+output = /var/lib/stunnel/logs/stunnel.log
 [instagram-live]
 client = yes
 accept = 127.0.0.1:19350
@@ -80,13 +80,13 @@ verifyChain = no
 ```
 ### 3. Create Required Directories
 ```bash
-sudo mkdir -p /var/run/stunnel
-sudo mkdir -p /var/log/stunnel
+sudo mkdir -p /var/lib/stunnel
+sudo mkdir -p /var/lib/stunnel/logs
 ```
 ### 4. Set Permissions
 ```bash
-sudo chown -R stunnel4:stunnel4 /var/run/stunnel
-sudo chown -R stunnel4:stunnel4 /var/log/stunnel
+sudo chown -R stunnel4:stunnel4 /var/lib/stunnel
+sudo chmod -R 755 /var/lib/stunnel
 ```
 ### 5. Restart Services
 ```bash
