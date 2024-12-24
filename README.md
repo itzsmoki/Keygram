@@ -30,7 +30,7 @@
 
 This browser extension enhances the Instagram streaming setup by adding a button to the streamkey input box. Once clicked, it sends the one-time use streamkey to a user-configured streaming server. The server automatically processes the key to route the stream from the server to Instagram. The extension includes a settings panel where users can configure the destination streaming server and optionally provide an authentication password for added security.
 
-<a href="server.md">Server Setup Guide (Linux)</a>
+<a href="SERVER.md">Server Setup Guide (Linux)</a>
 
 ## How to Install
 
