@@ -110,6 +110,8 @@ Create a Python file (e.g., `auth.py`) and add the following code:
 from flask import Flask, request, Response
 import subprocess
 from flask_cors import CORS
+import time
+import threading
 
 SECRET = "<your-key>"
 
@@ -147,12 +149,16 @@ def update_stream_key():
         with open(nginx_conf_path, 'w') as file:
             file.writelines(updated_lines)
 
-        subprocess.run(['sudo', 'systemctl', 'restart', 'nginx'], check=True)
+        threading.Thread(target=restart_nginx, daemon=True).start()
 
         return 'Stream Key successfully updated', 200
     else:
         return 'Unauthorized', 403
 
+
+def restart_nginx():
+    time.sleep(1)
+    subprocess.run(['sudo', 'systemctl', 'restart', 'nginx'], check=True)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
