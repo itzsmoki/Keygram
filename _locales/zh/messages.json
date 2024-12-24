@@ -16,5 +16,8 @@
   },
   "save": {
     "message": "保存"
+  },
+  "description": {
+    "message": "自动将您的 Instagram 流密钥发送到流媒体服务器"
   }
 }

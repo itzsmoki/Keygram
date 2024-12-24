@@ -16,5 +16,8 @@
   },
   "save": {
     "message": "保存"
+  },
+  "description": {
+    "message": "Instagramのストリームキーを自動的にストリーミングサーバーに送信する"
   }
 }

@@ -16,5 +16,8 @@
   },
   "save": {
     "message": "Guardar"
+  },
+  "description": {
+    "message": "Envía automáticamente tu clave de stream de Instagram a un servidor de streaming"
   }
 }

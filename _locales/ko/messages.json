@@ -16,5 +16,8 @@
   },
   "save": {
     "message": "저장"
+  },
+  "description": {
+    "message": "Instagram 스트림 키를 자동으로 스트리밍 서버에 전송합니다"
   }
 }

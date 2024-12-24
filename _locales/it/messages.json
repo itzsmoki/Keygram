@@ -16,5 +16,8 @@
   },
   "save": {
     "message": "Salva"
+  },
+  "description": {
+    "message": "Invia automaticamente la tua streamkey di Instagram ad un server di streaming"
   }
 }
