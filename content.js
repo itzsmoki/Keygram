@@ -2,13 +2,16 @@ let SECRET
 let SERVER
 const send = chrome.i18n.getMessage("send");
 
-chrome.storage.local.get('SECRET', function (result) {
-  SECRET = result.SECRET || ''
-})
+function updateStorageValues() {
+  chrome.storage.local.get('SECRET', function (result) {
+    SECRET = result.SECRET || '';
+  });
 
-chrome.storage.local.get('SERVER', function (result) {
-  SERVER = result.SERVER || ''
-})
+  chrome.storage.local.get('SERVER', function (result) {
+    SERVER = result.SERVER || '';
+  });
+}
+
 
 const onStreamKeyBoxLoaded = () => {
   const streamKeyBox = document.querySelector(
@@ -57,6 +60,7 @@ const onStreamKeyBoxLoaded = () => {
 
       sendButton.addEventListener('click', () => {
         const streamKey = streamKeyBox.value
+        updateStorageValues();
 
         if (!streamKey) {
           sendButton.disabled = false
