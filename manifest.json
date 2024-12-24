@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Keygram",
+    "description": "__MSG_description__",
     "version": "1.0.1",
     "default_locale": "en",
     "permissions": ["activeTab", "scripting", "storage"],
