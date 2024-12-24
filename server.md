@@ -4,7 +4,6 @@
 - Registered domain
 - SSL/TLS certificate (e.g., <a href="#ssl-certificate-generation-with-lets-encrypt">Let's Encrypt Guide</a>)
 - Chrome extension: <a href="https://github.com/itzsmoki/Keygram">Keygram</a>
-- Flask application with Gunicorn and Nginx (<a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04">Guide</a>)
 
 
 ---
@@ -163,6 +162,8 @@ def restart_nginx():
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
 ```
+### 3. Deploy your Flask app
+Flask application with Gunicorn and Nginx (<a href="https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04">Guide</a>)
 ## SSL Certificate Generation with Let's Encrypt
 ### 1. Install Let's Encrypt
 ```bash
