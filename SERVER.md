@@ -13,6 +13,7 @@
 ### 1. Install NGINX
 ```bash
 sudo apt install -y libnginx-mod-rtmp nginx
+sudo apt install nginx libnginx-mod-rtmp
 ```
 ### 2. Configure NGINX
 Edit the NGINX configuration file:
